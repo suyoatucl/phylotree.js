@@ -1,5 +1,5 @@
 {
-  "name": "phylotree",
+  "name": "suyoatucl-phylotree",
   "version": "1.4.2",
   "main": "dist/phylotree.js",
   "unpkg": "dist/phylotree.js",
