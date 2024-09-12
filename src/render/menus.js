@@ -217,8 +217,8 @@ export function nodeDropdownMenu(node, container, phylotree, options, event) {
    
     menu_object
       .style("position", "absolute")
-      .style("left", "" + (event.clientX - rect.x + 12 ) + "px")
-      .style("top", "" + (event.clientY - rect.y ) + "px")
+      .style("left", `${event.clientX - rect.x}px`)
+      .style("top", `${event.clientY - rect.y}px`)
       .style("display", "block");
   } else {
     menu_object.style("display", "none");
