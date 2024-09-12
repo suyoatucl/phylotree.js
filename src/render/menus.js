@@ -205,7 +205,14 @@ export function nodeDropdownMenu(node, container, phylotree, options, event) {
       });
     }
 
-    let tree_container = document.querySelector(container); // eslint-disable-line
+    // 修复代码：检查 container 是 DOM 对象还是选择器字符串
+    let tree_container;
+    if (typeof container === 'string') {
+      tree_container = document.querySelector(container);
+    } else if (container instanceof HTMLElement) {
+      tree_container = container;
+    }
+    
     let rect = tree_container.getBoundingClientRect();
    
     menu_object
